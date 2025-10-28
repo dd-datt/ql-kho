@@ -17,4 +17,5 @@
 
   /* Backwards-compatible alias used in templates/styles */
   --primary-color: var(--primary);
+  --accent-color: var(--accent)
 }
