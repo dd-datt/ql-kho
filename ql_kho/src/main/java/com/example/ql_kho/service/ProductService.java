@@ -37,4 +37,14 @@ public class ProductService {
     public void deleteProduct(Long id) {
         productRepository.deleteById(id);
     }
+
+    // Sử dụng JPAQuery (JPQL) để tìm kiếm sản phẩm theo tên hoặc mã SKU
+    public List<Product> searchProducts(String name, String sku) {
+        return productRepository.searchByNameOrSku(name, sku);
+    }
+
+    // Sử dụng NativeQuery để lọc sản phẩm theo tồn kho tối thiểu
+    public List<Product> filterProductsByMinStock(int minStock) {
+        return productRepository.filterByMinStock(minStock);
+    }
 }
