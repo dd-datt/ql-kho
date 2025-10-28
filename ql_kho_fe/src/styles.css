@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Global CSS custom properties (define app color variables here) */
+:root {
+  /* Warm Corporate palette (applied) */
+  --primary: #d35400; /* main brand color */
+  --primary-variant: #ba4a00; /* darker/variant */
+  --secondary: #f39c12; /* supporting color */
+  --accent: #27ae60; /* success/positive accents */
+  --bg: #ffffff; /* page background */
+  --surface: #fff7f0; /* surface (cards, panels) */
+  --text: #222222; /* primary text color */
+
+  /* Accessibility / convenience tokens */
+  --on-primary: #ffffff;
+  --on-surface: var(--text);
+
+  /* Backwards-compatible alias used in templates/styles */
+  --primary-color: var(--primary);
+}
